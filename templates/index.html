@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block profilePhoto %}
+    <div id="circle-frame"><img src="{{url_for('static', filename=profilePhoto) }}" alt="profile photo"></div>
+{% endblock %}
+
+{% block header %}
+    <div class="section-contents">
+        <p>Hi, {{ username|capitalize }}</p>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <section id="moneyinout">
+        <div id="one" class="moneyinoutcontent"> <a class="nav-link" href="/moneyIn">money in</a> </div>
+        <div id="two" class="moneyinoutcontent"> <a class="nav-link" href="/moneyOut">money out</a> </div>
+    </section>
+    <section class="spent_today_available_balance">
+        <div class="parent-inner-hero">
+            <section class="inner-hero">
+                <div class="balanceText">
+                    <p>Spent Today</p>
+                </div>
+                <div class="flex-container">
+                    <a class="toggleButton" class="text-muted"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#hide"></use>
+                    </svg></a>
+                    <div class="balance balanceStyle">{{ today | ngn }}</div>
+                </div>
+            </section>
+        </div>
+        <div class="parent-inner-hero">
+            <section class="inner-hero">
+                <div class="balanceText">
+                    <p>Available Balance</p>
+                </div>
+                <div class="flex-container">
+                    <a class="toggleButton" class="text-muted"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#hide"></use>
+                    </svg></a>
+                    <div class="balance balanceStyle">{{ balance | ngn }}</div>
+                </div>
+            </section>
+        </div>
+    </section>
+{% endblock %}

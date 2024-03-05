@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    moneyOut
+{% endblock %}
+
+{% block header %}
+    <div class="section-contents">
+        <img class="blockHeader" src="static/moneyOut.png" alt="deposit">
+    </div>
+{% endblock %}
+
+{% block main %}
+    <section id="moneyinout">
+        <div id="three" class="moneyinoutcontent"> <a class="nav-link" href="/moneyIn">money in</a> </div>
+    </section>
+    <table class="table">
+        <tr>
+            <th class="table-info">Transaction ID</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>To</th>
+            <th>Description</th>
+            <th>Balance</th>
+            <th>Date</th>
+            <th>Time</th>
+        </tr>
+
+        {% for row in moneyOut %}
+            <tr>
+                <td class="table-info">{{ row.id }}</td>
+                <td>{{ row.category }}</td>
+                <td>{{ row.moneyOut | ngn }}</td>
+                <td>{{ row.to_from }}</td>
+                <td>{{ row.description }}</td>
+                <td>{{ row.balance | ngn }}</td>
+                <td>{{ row.date }}</td>
+                <td>{{ row.time }}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+{% endblock %}

@@ -1,0 +1,211 @@
+.spendingbyBAMIDELE {
+    width: 50%;
+    height: auto;
+    padding: 1px;
+}
+
+.profilePhoto {
+    padding-left: 30%;
+    padding-top: 1%;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header section {
+    display: flex;
+    flex-direction: column;
+}
+
+.header section div {
+    flex: 1;
+    height: 100%;
+}
+
+p {
+    font-family: Garamond, serif;
+    font-weight: bold;
+}
+
+.section-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contents p {
+    font-family: 'Waterfall', cursive;
+    font-size: 300%;
+    color: #7ED957;
+    padding-bottom: 3%;
+}
+
+.spent_today_available_balance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spent_today_available_balance div {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .spent_today_available_balance {
+        flex-direction: column;
+    }
+}
+
+#moneyinout {
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moneyinoutcontent {
+    background-color: #7ED957;
+    color: white;
+    padding: 0.4%;
+    margin-top: -18%;
+}
+
+#one {
+    border-radius: 15px 0px 0px 15px;
+}
+
+#two {
+    border-radius: 0px 15px 15px 0px;
+}
+
+#three {
+    border-radius: 15px 15px 15px 15px;
+}
+
+.blockHeader {
+    width: 40%;
+    height: auto;
+}
+
+#extensionDiv {
+    overflow: auto;
+    margin-top: -18%;
+}
+
+#toggleButton {
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+fater {
+    margin-top: auto;
+}
+
+fater div {
+    background-color: #7ED957;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.spacer {
+    height: 50vh;
+}
+
+.spent_today_available_balance {
+    background-color: #00BF63;
+    border-radius: 50px 90px 50px 90px;
+    color: #000000;
+    height: 45vh;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+}
+
+.spent_today_available_balance div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    height: 102%;
+}
+
+.parent-inner-hero {
+    background-color: #7ED957;
+    border-radius: 0px 100px 0px 100px;
+}
+
+.inner-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #FFF;
+    width: 95%;
+    height: 95%;
+    border-radius: 100px 100px 100px 100px;
+}
+
+.svg {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+}
+
+#00BF63 .balance {
+    width: 70%;
+}
+
+.balanceStyle {
+
+    color: #7ED957;
+    font-size: 300%;
+    border-radius: 0px 0px 100px 0px;
+    padding-right: 15%;
+    padding-bottom: 10%;
+}
+
+.toggleButton {
+    width: 30%;
+    padding-left: 20%;
+    padding-bottom: 10%;
+}
+
+td {
+    text-align: left;
+}
+
+#circle-frame {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+}
+
+#circle-frame img {
+    width: 100%;
+    height: auto;
+}
+
+.balanceText {
+    background-color: #FFFF00;
+    border-radius: 100px 100px 0px 0px;
+    height: 60%;
+}
+
+
+
+.balanceText p {
+    font-family: 'Waterfall', cursive;
+    font-size: 300%;
+    font-weight: normal;
+}

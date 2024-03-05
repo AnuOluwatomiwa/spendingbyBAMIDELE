@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Withdraw
+{% endblock %}
+
+{% block header %}
+    <div class="section-contents">
+        <img class="blockHeader" src="static/withdrawal.png" alt="deposit">
+    </div>
+{% endblock %}
+
+{% block main %}
+    <form action="/withdraw" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="amount" name="amount" placeholder="Amount" type="text">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="bank" name="bank" placeholder="Receipient's Bank" type="text">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="receiver" name="receiver" placeholder="Receipient's Name" type="text">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="account_number" name="account_number" placeholder="Account Number" type="text">
+        </div>
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" id="description" name="description" placeholder="Description (optional)" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Withdraw</button>
+    </form>
+{% endblock %}
